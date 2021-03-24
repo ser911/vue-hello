@@ -6,8 +6,8 @@ const app = new Vue(
    name: "Sergio",
    surname: "Marretta",
    age: "30",
-   colorChange: "red"
-
+   colorChange: "red",
+   localLink: "img/img1.jpg"
  },
 
  methods: {
@@ -20,6 +20,5 @@ const app = new Vue(
 }
 
  }
-
 }
 );
