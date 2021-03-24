@@ -5,16 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <style media="screen">
+  .red{
+    color: red;
+  }
+  .blue{
+    color: blue;
+  }
+  </style>
+
 </head>
 <body>
   <div id="target">
     <input v-model="message" type="text" name="" value="" placeholder="Inserisci un testo">
+    <input v-model="name" type="text" name="" value="">
+    <input v-model="surname" type="text" name="" value="">
+    <input v-model="age" type="text" name="" value="">
     <h1> {{message}} </h1>
+
+    <ul>
+      <li>{{name}}</li>
+      <li>{{surname}}</li>
+      <li>{{age}}</li>
+    </ul>
+
+<button @click="colorClass">Bottone</button>
+
+<p v-bind:class="colorChange">{{name}} {{surname}} {{age}}</p>
     <img src="" alt="">
   </div>
 
   <!-- SCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="myscript.js" charset="utf-8"></script>
   <!-- SCRIPT -->
 
